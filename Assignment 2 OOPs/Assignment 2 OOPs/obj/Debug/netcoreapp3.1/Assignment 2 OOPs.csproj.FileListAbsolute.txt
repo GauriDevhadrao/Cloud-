@@ -1,0 +1,14 @@
+C:\Users\GDEVHADR\source\repos\Assignment 2 OOPs\Assignment 2 OOPs\obj\Debug\netcoreapp3.1\Assignment 2 OOPs.csproj.AssemblyReference.cache
+C:\Users\GDEVHADR\source\repos\Assignment 2 OOPs\Assignment 2 OOPs\obj\Debug\netcoreapp3.1\Assignment 2 OOPs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GDEVHADR\source\repos\Assignment 2 OOPs\Assignment 2 OOPs\obj\Debug\netcoreapp3.1\Assignment 2 OOPs.AssemblyInfoInputs.cache
+C:\Users\GDEVHADR\source\repos\Assignment 2 OOPs\Assignment 2 OOPs\obj\Debug\netcoreapp3.1\Assignment 2 OOPs.AssemblyInfo.cs
+C:\Users\GDEVHADR\source\repos\Assignment 2 OOPs\Assignment 2 OOPs\obj\Debug\netcoreapp3.1\Assignment 2 OOPs.csproj.CoreCompileInputs.cache
+C:\Users\GDEVHADR\source\repos\Assignment 2 OOPs\Assignment 2 OOPs\bin\Debug\netcoreapp3.1\Assignment 2 OOPs.exe
+C:\Users\GDEVHADR\source\repos\Assignment 2 OOPs\Assignment 2 OOPs\bin\Debug\netcoreapp3.1\Assignment 2 OOPs.deps.json
+C:\Users\GDEVHADR\source\repos\Assignment 2 OOPs\Assignment 2 OOPs\bin\Debug\netcoreapp3.1\Assignment 2 OOPs.runtimeconfig.json
+C:\Users\GDEVHADR\source\repos\Assignment 2 OOPs\Assignment 2 OOPs\bin\Debug\netcoreapp3.1\Assignment 2 OOPs.runtimeconfig.dev.json
+C:\Users\GDEVHADR\source\repos\Assignment 2 OOPs\Assignment 2 OOPs\bin\Debug\netcoreapp3.1\Assignment 2 OOPs.dll
+C:\Users\GDEVHADR\source\repos\Assignment 2 OOPs\Assignment 2 OOPs\bin\Debug\netcoreapp3.1\Assignment 2 OOPs.pdb
+C:\Users\GDEVHADR\source\repos\Assignment 2 OOPs\Assignment 2 OOPs\obj\Debug\netcoreapp3.1\Assignment 2 OOPs.dll
+C:\Users\GDEVHADR\source\repos\Assignment 2 OOPs\Assignment 2 OOPs\obj\Debug\netcoreapp3.1\Assignment 2 OOPs.pdb
+C:\Users\GDEVHADR\source\repos\Assignment 2 OOPs\Assignment 2 OOPs\obj\Debug\netcoreapp3.1\Assignment 2 OOPs.genruntimeconfig.cache
