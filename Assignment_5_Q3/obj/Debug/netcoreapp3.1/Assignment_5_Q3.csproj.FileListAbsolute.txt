@@ -1,0 +1,14 @@
+C:\Users\GDEVHADR\source\repos\Cloud-\Assignment_5_Q3\bin\Debug\netcoreapp3.1\Assignment_5_Q3.exe
+C:\Users\GDEVHADR\source\repos\Cloud-\Assignment_5_Q3\bin\Debug\netcoreapp3.1\Assignment_5_Q3.deps.json
+C:\Users\GDEVHADR\source\repos\Cloud-\Assignment_5_Q3\bin\Debug\netcoreapp3.1\Assignment_5_Q3.runtimeconfig.json
+C:\Users\GDEVHADR\source\repos\Cloud-\Assignment_5_Q3\bin\Debug\netcoreapp3.1\Assignment_5_Q3.runtimeconfig.dev.json
+C:\Users\GDEVHADR\source\repos\Cloud-\Assignment_5_Q3\bin\Debug\netcoreapp3.1\Assignment_5_Q3.dll
+C:\Users\GDEVHADR\source\repos\Cloud-\Assignment_5_Q3\bin\Debug\netcoreapp3.1\Assignment_5_Q3.pdb
+C:\Users\GDEVHADR\source\repos\Cloud-\Assignment_5_Q3\obj\Debug\netcoreapp3.1\Assignment_5_Q3.csproj.AssemblyReference.cache
+C:\Users\GDEVHADR\source\repos\Cloud-\Assignment_5_Q3\obj\Debug\netcoreapp3.1\Assignment_5_Q3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GDEVHADR\source\repos\Cloud-\Assignment_5_Q3\obj\Debug\netcoreapp3.1\Assignment_5_Q3.AssemblyInfoInputs.cache
+C:\Users\GDEVHADR\source\repos\Cloud-\Assignment_5_Q3\obj\Debug\netcoreapp3.1\Assignment_5_Q3.AssemblyInfo.cs
+C:\Users\GDEVHADR\source\repos\Cloud-\Assignment_5_Q3\obj\Debug\netcoreapp3.1\Assignment_5_Q3.csproj.CoreCompileInputs.cache
+C:\Users\GDEVHADR\source\repos\Cloud-\Assignment_5_Q3\obj\Debug\netcoreapp3.1\Assignment_5_Q3.dll
+C:\Users\GDEVHADR\source\repos\Cloud-\Assignment_5_Q3\obj\Debug\netcoreapp3.1\Assignment_5_Q3.pdb
+C:\Users\GDEVHADR\source\repos\Cloud-\Assignment_5_Q3\obj\Debug\netcoreapp3.1\Assignment_5_Q3.genruntimeconfig.cache
