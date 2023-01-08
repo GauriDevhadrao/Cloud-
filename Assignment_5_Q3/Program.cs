@@ -1,57 +1,47 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace Assignment_5_Q3
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main(string[] args)
         {
-            Console.WriteLine("Enter the No. Employees details you want to enter");
-            int ch = Convert.ToInt32(Console.ReadLine());
+            List<Employee> li = new List<Employee>();
 
-            List<Employee> listEmployees = new List<Employee>();
-            for (int i = 0; i < ch; i++)
+            Console.WriteLine("Enter the number of Employees you want:");
+            int size = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter the names of employee :");
+            for (int i = 0; i < size; i++)
             {
-                Console.WriteLine("$Enter Employee "+i+" Details:");
-                Console.WriteLine("Enter Emp ID:");
-                int id = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("Enter Emp name:");
                 string name = Console.ReadLine();
-                Console.WriteLine("Enter Emp department:");
-                string department = Console.ReadLine();
-                Console.WriteLine("Enter Emp joining date:");
-                string jdate = Console.ReadLine();
-                Console.WriteLine("Enter Emp salary:");
-                int salary = Convert.ToInt32(Console.ReadLine());
-
-                Employee emp1 = new Employee()
-                {
-                    ID = id,
-                    Name = name,
-                    Department = department,
-                    Joining_Date = jdate,
-                    Salary = salary
-                };
-                listEmployees.Add(emp1);
+                li.Add(new Employee(name));
             }
-            // break;
 
-            // case 2
-            Console.WriteLine("\n all Details of Empolyees:");
-            foreach (Employee employee
-                 in listEmployees)
+            Console.WriteLine("The list of employee is :");
+            foreach (Employee emp in li)
             {
-                Console.WriteLine("Employee Details:");
-
-
-                Console.WriteLine($"\nID = {employee.ID}, \nName = {employee.Name}, " +
-                    $"\nDepartment = {employee.Department},\nJoining_Date = {employee.Joining_Date}," +
-                    $"\nSalary = {employee.Salary}");
-
+                Console.WriteLine(emp);
             }
+            Console.WriteLine("List Contains " + li.Count + " Employees");
+            Console.WriteLine("Enter the name of the employee you want to search");
+            string searchName = Console.ReadLine();
+            bool found = false;
 
-            Console.WriteLine($"\n\nTotal Employee Count : {listEmployees.Count}");
+            foreach (Employee e in li)
+            {
+                if (e.name.Equals(searchName, StringComparison.OrdinalIgnoreCase))
+                {
+                    found = true;
+                }
+                else
+                {
+                    found = false;
+                }
+            }
+            Console.WriteLine(found == true ? "Employee found." : "No record found.");
         }
     }
 }
