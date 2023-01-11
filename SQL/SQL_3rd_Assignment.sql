@@ -3,7 +3,7 @@ select * from Orders
 select * from Products
 select * from Orderitem
 select * from Employee
-
+select * From Employee1
  
 
 Create table Customer (
@@ -62,8 +62,10 @@ insert into Customer values (4,'Rutuja', 'Thombre', 'Paris','France','7754775655
 insert into Customer values (5,'Nikita', 'Punde', 'Peru','Japan','9436175655');
 insert into Customer values (6,'Devashree', 'More', 'Pune','India','0300074321');
 insert into Customer values (7,'Shweta', 'Hase', 'London','UK','9328874321');
+insert into Customer values (8, 'Pooja', 'Patil', 'Mumbai', 'India', '9900865243', '5555');
+insert into Customer values (9, 'Harsh', 'Dev', 'Nashik', 'India', '9900898243', '4444')
 
-
+update Customer set Country = 'Germany' where Id = 2;
  
 
 insert into Orders values (11,'12/3/2022' ,'543',1,764653);
@@ -73,7 +75,17 @@ insert into Orders values (4,'2021/11/06 02:52:42:40' ,'945',4,632453);
 insert into Orders values (5,'2022/03/04 11:22:59:20' ,'983',5,943653);
 insert into Orders values (6,'6/2/2921','124',6,127355);
 
- 
+update Orders set Shipping_Date ='2022-6-2' where Id = 2;
+update Orders set Shipping_Date ='2022-8-2' where Id = 3;
+update Orders set Shipping_Date ='2022-9-3' where Id = 4;
+update Orders set Shipping_Date ='2022-4-4' where Id = 5;
+update Orders set Shipping_Date ='2022-7-3' where Id = 6;
+
+update Orders set ShippingCompanyname = 'Puma', ShipName = 'Ocean' where Id = 2;
+update Orders set ShippingCompanyname = 'RedKing', ShipName = 'Pearl' where Id = 3;
+update Orders set ShippingCompanyname = 'Exotic Liquids', ShipName = 'La corne dabondance' where Id = 4;
+update Orders set ShippingCompanyname = 'Puma', ShipName = 'Ocean' where Id = 5;
+update Orders set ShippingCompanyname = 'RedKing', ShipName = 'Pearl' where Id = 6;
 
 delete from Orders where Id = 11;
 
@@ -96,6 +108,7 @@ insert into Orderitem values (234,3,1,534,54 );
 insert into Orderitem values (764,5,2,874,59 );
 insert into Orderitem values (836,4,3,498,87 );
 insert into Orderitem values (902,6,4,321,90 );
+insert into Orderitem values (102,2,5,15,80);
 
  
 
@@ -104,12 +117,28 @@ insert into Employee values ('Gauri','Devhadrao','Civil',4,20000);
 insert into Employee values ('Rutuja','Thombre','Electrical',3,30000);
 insert into Employee values ('Nikita','Punde','ENTC',4,40000);
 insert into Employee values ('Amruta','Kulkarni','Computer',2,10000);
+insert into Employee values ('Harsh','Dev','Computer',2,10000,2022-4-5);
 
- 
+Alter table Employee add JoiningDate nvarchar(40);
+
+insert into Employee1 values ('Gauri Devhadrao',22);
+insert into Employee1 values ('Apurva Gondkar',20);
 
 Alter table Products add Category nvarchar(40);
 
+ Assignment 1:
+ Select * From Costomer
+
  
+
+Select Country 
+from Customer where Country like 'A%' or Country like 'I%'
+Order by Country
+
+Select * from Customer where FirstName like '__u%'
+
+
+ Assignment 3:
 
 select * from Orders where CustomerId = (select Id from Customer where Phone ='0300074321');
 
@@ -128,3 +157,84 @@ select * from Orderitem where ProductId like (select Id from Products where Prod
  
 
 select FirstName,LastName,Department,Rating from Employee  
+
+Assignment :2
+1]
+select * from Customer where Country in ('Germany')
+
+ 
+2]
+select FirstName + ''+ LastName as " FullName" From Employee
+
+ 
+
+alter table Customer add FaxNo nvarchar(40)
+
+ 
+3]
+select * from Customer where FaxNo is NOT NULL
+
+ 
+4]
+select * from Customer where FirstName like '___u%'
+
+ 
+5]
+select * from Orderitem where UnitPrice >'10' and UnitPrice < '20'
+
+ Alter table Orders add Shipping_Date datetime
+ Alter table Orders add ShippingCompanyName nvarchar(50);
+ Alter table Orders add ShipName nvarchar(50)
+
+6]
+ select * from Orders order by Shipping_Date
+
+7]
+ Select * from Orders where ShipName like 'La corne dabondance' and Shipping_Date between '2022-07-03' and '2022-09-03'
+
+8]
+ Select ProductName, ShippingCompanyName
+ from Products
+ left join Orderitem
+ on Products.Id = Orderitem.ProductId
+ left join Orders
+ on Orders.Id = Orderitem.OrderId
+ where ShippingCompanyName = 'Exotic liquids'
+
+9]
+Select avg(Orderitem.Quntity) as Total, Products.ProductName
+from Products
+left join Orderitem
+on Orderitem.ProductId=ProductId
+group by Products.ProductName
+
+10]
+Select ShippingCompanyName, ShipName
+from Orders
+
+11]
+Create table Employee1
+(Id int primary key identity(1,1),
+Name nvarchar(50) not null,
+ManagerId int not null
+)
+
+select m.Name, e.Name as ManagerName
+from Employee1 e
+inner join Employee1 m
+on e.Id=m.ManagerId
+
+12]
+select ProductName, ShippingCompanyName,(Products.UnitPrice*Quntity)as TotalPrice 
+from Products
+full outer join Orderitem
+on Products.Id=Orderitem.ProductId
+full outer join Orders
+on Orders.Id= Orderitem.OrderId
+where ShippingCompanyName = 'Exotic liquids' and Products.UnitPrice>50
+
+Assignment 4:
+
+2.select * from Employee order by JoiningDate
+5.select * from Products where IsDiscomtinued = 0;
+10.select Id from Customer where FirstName like '%RA%'
